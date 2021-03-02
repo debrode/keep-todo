@@ -5,10 +5,12 @@
   }
   html {
     font-family: "Montserrat", sans-serif;
+    
   }
   body {
     background: #a7c5eb;
     padding: 0 16px;
+    width: 100vw;
   }
   
   header {
@@ -58,7 +60,7 @@
 
   form.create-note {
     position: relative;
-    width: 480px;
+    width: 320px;
     margin: 30px auto 20px auto;
     background: #fff;
     padding: 15px;
