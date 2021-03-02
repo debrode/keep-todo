@@ -11,6 +11,13 @@ function App() {
       return [...prev,note];
     });
   }
+  function deleteNote(id) {
+    setNote(prev=>{
+     return prev.filter((note,index)=>{
+        return index!== id;
+      });
+    });
+  }
   return (
     <div className="App">
       <Header/>
@@ -19,6 +26,7 @@ function App() {
          return <Note 
           title={note.title}
           Content={note.Content}
+          onDelete={deleteNote}
          />
       })}
       <Footer/>
