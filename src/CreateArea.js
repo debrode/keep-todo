@@ -19,8 +19,9 @@ function CreateArea(prop){
             });
     }
     function submitNote(e) {
+        prop.onAdd(note);
         e.preventDefault();
-        
+
     }
     return (
        <div >

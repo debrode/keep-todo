@@ -5,11 +5,13 @@ import Note from "./Note";
 
 import CreateArea from "./CreateArea";
 function App() {
-  
+  function addNote(note) {
+    
+  }
   return (
     <div className="App">
       <Header/>
-      <CreateArea/>
+      <CreateArea onAdd={addNote} />
       
       <Footer/>
     </div>
